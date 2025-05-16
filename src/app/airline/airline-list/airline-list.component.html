@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="text-center">Aerolíneas de los Andes</h1>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let airline of airlines">
+      <div class="card mb-3" [style.background-color]="airline.identityColor">
+        <div class="card-body">
+          <h5 class="card-title text-white">{{airline.name}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
